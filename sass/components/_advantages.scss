@@ -1,0 +1,64 @@
+.advantages-section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+}
+
+.advantages{
+    display: flex;    
+}
+
+.advantages-list-item{
+    width: 270px;  
+    
+    &:not(:last-child){
+        margin-right: 30px;
+    }
+    
+    &::before{
+        display: block;
+        content: '';
+        height: 120px;
+        background-color: $background-light-color;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 30px;
+        border-radius: 4px;    
+    }
+
+    &.antenna::before {
+        background-image: url(../images/svg/antenna.svg);
+    }
+    
+    &.clock::before {
+        background-image: url(../images/svg/clock.svg);
+    }
+    
+    &.diagram::before {
+        background-image: url(../images/svg/diagram.svg);
+    }
+    
+    &.astronaut::before {
+        background-image: url(../images/svg/astronaut.svg);
+    }
+}
+
+
+.description-title{
+    color: $title-text-color;
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.142;
+    text-transform: uppercase;   
+
+    margin-bottom: 10px; 
+}
+
+.description-item{
+    color: $main-text-color;
+
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.714;    
+}

@@ -1,0 +1,152 @@
+.footer{
+    background-color: $background-hero-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+}
+
+.footer .container{
+    display: flex;
+    align-items: baseline    
+}
+
+.address{
+    margin-right: 70px;
+}
+
+
+
+
+.address-list-item:not(:last-child){
+   margin-bottom: 9px; 
+}
+
+
+    
+
+.address-link{
+    color: rgba(255, 255, 255, 0.6);
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.714;
+    text-decoration: none;
+
+    transition: color 250ms $timing-function;
+
+    &.place{
+        color: $background-main-color;
+    
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1.714;
+        text-decoration: none;
+    }
+
+    &:hover,
+    &:focus{
+        color: $accent-color;  
+    }
+}
+
+
+
+.invitation{
+    align-items: flex-start;
+    width: 206px;
+    height: 80px;
+    margin-right: auto;
+
+    &-title{
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.142;
+        text-transform: uppercase;
+        color: $background-main-color;
+    
+        margin-bottom: 20px;
+    }   
+}
+
+
+
+.social-link.dark-theme{
+    background: rgba(255, 255, 255, 0.1);
+
+    &:hover,
+    &:focus{
+        background-color: $accent-color;
+    }
+}
+
+.social-icon.dark-theme{ 
+    fill: $background-main-color;
+}
+
+.invitation-title.mailing{
+    margin-bottom: 20px;
+}
+
+
+.label-footer{
+    margin-right: 12px;
+}
+
+.input-footer{
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: $background-hero-color;
+    padding: 15px 16px;
+    color: $background-main-color;
+    transition: border-color 250ms $timing-function;
+
+    &:hover{
+        border-color: $background-main-color;
+    }
+    
+    &::placeholder{
+        font-size: 16px;
+        line-height: 1.250;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+
+.button-link-footer{
+    position: relative;
+    background: $accent-color;
+    color: $background-main-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 0;
+    border-radius: 4px;
+    border-color: transparent; 
+    box-sizing: border-box;    
+
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+
+    padding: 10px  62px 10px 29px ;
+
+    transition: background-color 250ms $timing-function;
+
+    &:hover{
+        background-color:#188CE8;
+    }
+}
+
+.footer-icon{
+    position: absolute;
+    top: 13px;
+    right: 28px;
+}

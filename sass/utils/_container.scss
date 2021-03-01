@@ -1,0 +1,32 @@
+.container{
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    .header &{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 480px){
+    .container{
+        width: 450px;        
+    }
+
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        width: 738px;       
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+    .container{
+        width: 1200px;        
+    }
+
+}
