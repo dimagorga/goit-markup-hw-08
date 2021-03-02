@@ -47,7 +47,8 @@
 
 .description-item{
     color: $main-text-color;
-    max-width: 354px;
+    width: 450px;
+    max-width: 100%;
     font-weight: normal;
     font-size: 14px;
     line-height: 1.714;   
@@ -71,7 +72,10 @@
         margin-right: 30px;
     }
 
-    
+    .description-item{        
+        width: 354px;
+        max-width: 100%;
+    }
 
 }
 
