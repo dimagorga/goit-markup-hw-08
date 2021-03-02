@@ -218,25 +218,23 @@
 
     .header__contacts{
         margin-left: auto;
-    }
 
-    
-    
-    .header__contacts--link{ 
-        font-style: normal;   
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.142;
-        letter-spacing: 0.02em;
-        text-decoration: none;
-        color: $main-text-color; 
-    
-        display: flex;
-        align-items: center;
+        &--link{ 
+            font-style: normal;   
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.142;
+            letter-spacing: 0.02em;
+            text-decoration: none;
+            color: $main-text-color; 
         
-    
-        transition: color 250ms $timing-function;
-    }
+            display: flex;
+            align-items: center;
+            
+        
+            transition: color 250ms $timing-function;
+        }
+    }   
     
     .contacts-icon{
         width: 16px;
