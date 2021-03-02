@@ -24,7 +24,7 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: -100%;
+    top: -50%;
     left: 0;
     width: 100%;
     max-width: 480px;
@@ -37,7 +37,7 @@
     transition: transform 250ms $timing-function;
 
     &.is-open{
-        transform: translatey(100%);
+        transform: translate(0, 50%);
         opacity: 1;
         pointer-events: all;
    }
@@ -112,13 +112,10 @@
     }    
 }
 
-.mail{
-    font-size: 24px;
-    line-height: 1.166; 
-}
 
 .mobile__social--list{
     display: flex;
+    flex-wrap: wrap;
 
     .mobile__social--item:not(:last-child){
         margin-right: 10px;
