@@ -33,6 +33,7 @@
     padding: 48px 40px;
     opacity: 0;
     pointer-events: none;
+    z-index: 999;
 
     transition: transform 250ms $timing-function;
 
@@ -137,7 +138,7 @@
 }
 
 
-@media screen and(max-width: 767px){
+@media screen and (max-width: 767px){
     .header__items,
     .header__contacts{
     display: none;

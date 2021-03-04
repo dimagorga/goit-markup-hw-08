@@ -2,7 +2,7 @@
     background-color: $background-hero-color;
     padding-top: 60px;
     padding-bottom: 60px;
-    text-align: center;
+   
     
 }
 
@@ -45,7 +45,7 @@
      }
  }
 
- .invitation{    
+ .invitation{        
     width: 206px;
     height: 80px;
     margin-bottom: 60px;
@@ -85,7 +85,8 @@
 }
 
 .input-footer{
-    width: 358px;
+    width: 100%;
+    max-width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
@@ -93,6 +94,7 @@
     border-radius: 4px;
     background-color: $background-hero-color;
     padding: 15px 16px;
+    
     color: $background-main-color;
     transition: border-color 250ms $timing-function;
 
@@ -141,10 +143,26 @@
 }
 
 
+@media screen and(max-width: 1190px){
+    .footer{
+        text-align: center;
+    }
+    .input-footer{
+        margin-bottom: 20px;
+    }
+
+    .invitation{  
+        display: inline-block;
+    }
+}
+
 
 @media screen and (min-width: 1200px){
     
+}
 
+
+@media screen and (min-width: 1200px){
 
     .address{
         margin-right: 70px;
@@ -152,8 +170,13 @@
     }
     .invitation{    
         margin-right: auto;
-
     }
 
+    .footer-form{
+        display: flex;
+    }
 
+    .input-footer{
+    width: 358px;    
+    }
 }
