@@ -1,12 +1,10 @@
 
  .card-list-item{      
     margin-bottom: 30px;    
-}   
-
-
+}
 
 .card-link{
-    display: block;
+    display: inline-block;
     text-decoration: none; 
 
     transition: box-shadow 250ms $timing-function;
@@ -30,9 +28,9 @@
     align-items: center;
     overflow: hidden;
 
-    &-text{
-        position: absolute; 
-    
+    &-text{        
+        position: absolute;  
+           
     
         font-weight: normal;
         font-size: 18px;
@@ -57,7 +55,6 @@
             transform: translate(0%, -100%);
         }
     }
-
 }
 
 .porfolio-description{
@@ -87,12 +84,48 @@
     }
 }
 
+@media screen and (min-width: 768px){
 
-
-@media screen and (min-width: 1200px){
     .card-list{    
         display: flex;
         flex-wrap: wrap;
+           
+    } 
+
+    .overlay-text{        
+        max-width: 354px;       
+        padding: 49px 24px ;        
+    }
+
+    .porfolio-description{
+        max-width: 354px;
+        width: 100%; 
+    }   
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    .card-list{    
+        flex-basis: calc(100% / 2 - 30px);  
+        
+        &-item{       
+            margin-right: 30px;
+            margin-bottom: 30px;    
+        
+            &:nth-child(2n){
+                margin-right: 0px;
+            }
+            &:nth-last-child(-n + 2){
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+    
+
+
+@media screen and (min-width: 1200px){
+    
+    .card-list{    
         flex-basis: calc(100% / 3 - 30px);  
         
         &-item{       
@@ -106,42 +139,20 @@
                 margin-bottom: 0px;
             }
         }
-    } 
-    
-        
-    
-    .overlay-text{        
-        width: 370px;
-        
+    }
+
+
+    .overlay-text{ 
+                
+        max-width: 370px;       
+        padding: 63px 24px ;             
+               
     }        
 
     
     
     .porfolio-description{
-        display: block;
-        text-align: left;
-    
-        border: 1px solid #EEEEEE;
-        padding: 20px 24px;
-    
-        
-        &-title{
-            color: $title-text-color;
-            font-weight: bold;
-            font-size: 18px;
-            line-height: 2;
-            letter-spacing: 0.06em;
-            
-            margin-bottom: 4px;
-        }
-    
-    
-        &-text{
-            color: $main-text-color;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 1.875;    
-        }
-    }
+        max-width: 370px; 
+    }     
     
 }
