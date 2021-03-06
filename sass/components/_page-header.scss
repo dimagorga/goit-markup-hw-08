@@ -25,13 +25,13 @@
 }
 
 .mobile-menu{
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
-    top: -50%;
-    left: 0;
+    top: 0;
+    left: 50%;
     width: 100%;
-    max-width: 480px;
+    max-width: 767px;
     height: 100vh;
     background-color: $background-main-color;
     padding: 48px 40px;
@@ -42,7 +42,7 @@
     transition: transform 250ms $timing-function;
 
     &.is-open{
-        transform: translate(0, 50%);
+        transform: translate(-50%, 0);
         opacity: 1;
         pointer-events: all;
    }
@@ -104,7 +104,7 @@
     
     &--link{
         font-weight: 500;
-        font-size: 34px;
+        font-size: 26px;
         line-height: 1.176;
         letter-spacing: 0.02em;
         color: $accent-color;
@@ -123,7 +123,7 @@
     flex-wrap: wrap;
 
     .mobile__social--item:not(:last-child){
-        margin-right: 10px;
+        margin-right: 5px;
         border-right: 1px solid rgba(33, 33, 33, 0.2);
     }
    
@@ -131,12 +131,12 @@
 
 .mobile__social--link{
     font-weight: 500;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.222;
     letter-spacing: 0.02em;
     color: $accent-color;
 
-    padding-right: 10px;
+    padding-right: 5px;
 
    
 }

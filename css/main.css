@@ -110,13 +110,13 @@ body {
 }
 
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
-  top: -50%;
-  left: 0;
+  top: 0;
+  left: 50%;
   width: 100%;
-  max-width: 480px;
+  max-width: 767px;
   height: 100vh;
   background-color: #FFFFFF;
   padding: 48px 40px;
@@ -127,7 +127,7 @@ body {
 }
 
 .mobile-menu.is-open {
-  transform: translate(0, 50%);
+  transform: translate(-50%, 0);
   opacity: 1;
   pointer-events: all;
 }
@@ -187,7 +187,7 @@ body {
 
 .mobile__contacts--link {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 26px;
   line-height: 1.176;
   letter-spacing: 0.02em;
   color: #2196F3;
@@ -205,17 +205,17 @@ body {
 }
 
 .mobile__social--list .mobile__social--item:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 5px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .mobile__social--link {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.222;
   letter-spacing: 0.02em;
   color: #2196F3;
-  padding-right: 10px;
+  padding-right: 5px;
 }
 
 @media screen and (max-width: 767px) {
@@ -391,13 +391,13 @@ body {
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
-  max-width: 480px;
-  height: 400px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-color: #2F303A;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/bg-mobile.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
@@ -439,7 +439,6 @@ body {
 
 @media screen and (min-width: 768px) {
   .hero-section {
-    max-width: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/bg-tablet.jpg");
   }
 }
@@ -452,8 +451,6 @@ body {
 
 @media screen and (min-width: 1200px) {
   .hero-section {
-    max-width: 1600px;
-    height: 600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/bg.jpg");
     padding-top: 200px;
     padding-bottom: 200px;
